@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postpartum Depression Awareness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home" aria-label="Postpartum depression awareness hero">
+      <video
+        id="heroVideo"
+        class="hero-video"
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260329_050842_be71947f-f16e-4a14-810c-06e83d23ddb5.mp4"
+        autoplay
+        muted
+        playsinline
+        preload="auto"
+      ></video>
+
+      <div class="hero-shell">
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="#home" class="brand" aria-label="Postpartum awareness home">
+            <img
+              class="brand-logo"
+              src="assets/postpartum-logo.png"
+              alt="Postpartum Depression Awareness logo"
+            />
+          </a>
+
+          <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#symptoms">Symptoms</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#myths">Myths</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#help">Help</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <button class="btn btn-signup" type="button" data-scroll="#about">Learn More</button>
+            <button class="btn btn-login" type="button" data-scroll="#help">Get Help</button>
+          </div>
+        </nav>
+
+        <div class="hero-content">
+          <div class="hero-header">
+            <div class="badge-wrap">
+              <span class="badge-new">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 3.2l2.2 4.6 5.1.7-3.7 3.6.9 5.1-4.5-2.4-4.5 2.4.9-5.1-3.7-3.6 5.1-.7L12 3.2z"
+                  />
+                </svg>
+                New
+              </span>
+              <span class="badge-text">You are not alone</span>
+            </div>
+
+            <h1>Postpartum Depression Awareness</h1>
+            <p>
+              Support starts with understanding. Learn the signs, reduce stigma,
+              and help mothers get the care they deserve.
+            </p>
+          </div>
+
+          <div class="search-card" role="group" aria-label="Quick actions">
+            <div class="search-top">
+              <div class="credits">
+                <span>Students and families welcome</span>
+                <button type="button" class="upgrade" data-scroll="#help">Reach Out</button>
+              </div>
+              <div class="powered">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2.8l1.7 3.7 4 .6-2.9 2.8.7 4-3.5-1.9-3.5 1.9.7-4L6.3 7.1l4-.6L12 2.8zm6.2 11.8l.9 1.9 2.1.3-1.5 1.5.4 2.1-1.9-1-1.9 1 .4-2.1-1.5-1.5 2.1-.3.9-1.9zm-12.4 0l.9 1.9 2.1.3-1.5 1.5.4 2.1-1.9-1-1.9 1 .4-2.1-1.5-1.5 2.1-.3.9-1.9z"
+                  />
+                </svg>
+                Awareness Hub
+              </div>
+            </div>
+
+            <div class="search-input-row">
+              <input
+                type="text"
+                id="questionInput"
+                placeholder="Type question..."
+                aria-label="Type your question about postpartum depression"
+              />
+              <button type="button" class="submit-search" id="askButton" aria-label="Submit question">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 17V7m0 0l-4.5 4.5M12 7l4.5 4.5" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="search-bottom">
+              <div class="tools">
+                <button type="button" class="tool-btn" data-scroll="#symptoms">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8.5 7.5h7a2.5 2.5 0 010 5h-3.5a2.5 2.5 0 100 5h3.5" />
+                  </svg>
+                  Symptoms
+                </button>
+                <button type="button" class="tool-btn" data-scroll="#support">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 4a3 3 0 00-3 3v5a3 3 0 106 0V7a3 3 0 00-3-3zm-5 8a5 5 0 0010 0m-5 5v3"
+                    />
+                  </svg>
+                  Support
+                </button>
+                <button type="button" class="tool-btn" data-scroll="#myths">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M11 4a7 7 0 015.5 11.3L20 19" />
+                    <circle cx="11" cy="11" r="6" />
+                  </svg>
+                  Myth vs Fact
+                </button>
+              </div>
+              <span class="counter" id="charCounter">0/3,000</span>
+            </div>
+          </div>
+
+          <div class="preview-grid">
+            <article class="preview-card" data-scroll="#symptoms" tabindex="0">
+              <h3>Symptoms</h3>
+              <p>Recognize emotional, physical, and behavioral warning signs.</p>
+            </article>
+            <article class="preview-card" data-scroll="#symptoms" tabindex="0">
+              <h3>Causes</h3>
+              <p>Understand hormone changes, stress, and social pressure.</p>
+            </article>
+            <article class="preview-card" data-scroll="#support" tabindex="0">
+              <h3>Prevention</h3>
+              <p>Early support and open conversations can change outcomes.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="section-head">
+          <p class="eyebrow">About</p>
+          <h2>What is postpartum depression?</h2>
+        </div>
+        <div class="grid two-col">
+          <article class="surface-card">
+            <h3>A real medical condition</h3>
+            <p>
+              Postpartum depression is not a weakness. It is a mental health
+              condition that can affect mothers after childbirth and may impact
+              mood, sleep, appetite, focus, and bonding.
+            </p>
+          </article>
+          <article class="surface-card">
+            <h3>Why awareness matters</h3>
+            <p>
+              Awareness helps people spot warning signs earlier, reduce stigma,
+              and encourage compassionate support from families, friends,
+              schools, and communities.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="visual-guide">
+        <div class="section-head">
+          <p class="eyebrow">Visual Guide</p>
+          <h2>Postpartum Depression Awareness Infographic</h2>
+        </div>
+        <figure class="infographic-card">
+          <img
+            src="assets/ppd-infographic.png"
+            alt="Infographic about postpartum depression symptoms, causes, prevention, myths, and support"
+            class="infographic-image"
+          />
+        </figure>
+      </section>
+
+      <section class="section" id="symptoms">
+        <div class="section-head">
+          <p class="eyebrow">Symptoms and Causes</p>
+          <h2>Know the signs and risk factors</h2>
+        </div>
+
+        <div class="grid three-col">
+          <article class="icon-card">
+            <p class="icon">😔</p>
+            <h3>Persistent sadness</h3>
+            <p>Feeling empty, hopeless, or overwhelmed most days.</p>
+          </article>
+          <article class="icon-card">
+            <p class="icon">😴</p>
+            <h3>Sleep and energy changes</h3>
+            <p>Extreme fatigue, insomnia, or disrupted sleep patterns.</p>
+          </article>
+          <article class="icon-card">
+            <p class="icon">💭</p>
+            <h3>Anxiety and fear</h3>
+            <p>Frequent worry, panic, or difficulty concentrating.</p>
+          </article>
+        </div>
+
+        <div class="grid two-col split-gap">
+          <article class="surface-card">
+            <h3>Common causes and triggers</h3>
+            <ul>
+              <li>Rapid hormonal changes after delivery</li>
+              <li>Lack of sleep and high emotional stress</li>
+              <li>Limited social, financial, or partner support</li>
+              <li>History of anxiety, depression, or trauma</li>
+            </ul>
+          </article>
+          <article class="surface-card stat-card">
+            <h3>Did you know?</h3>
+            <p class="stat">1 in 7 mothers may experience postpartum depression</p>
+            <div class="seven-grid" aria-label="One highlighted figure out of seven">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="support">
+        <div class="section-head">
+          <p class="eyebrow">Prevention and Support</p>
+          <h2>Supportive actions that help</h2>
+        </div>
+
+        <div class="grid three-col">
+          <article class="surface-card">
+            <h3>Self-care basics</h3>
+            <p>Prioritize sleep, hydration, nutritious meals, and short rest breaks.</p>
+          </article>
+          <article class="surface-card">
+            <h3>Family support</h3>
+            <p>Offer practical help and listen without judgment or pressure.</p>
+          </article>
+          <article class="surface-card">
+            <h3>Early professional care</h3>
+            <p>If symptoms persist over two weeks, seek mental health support.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="myths">
+        <div class="section-head">
+          <p class="eyebrow">Myth vs Fact</p>
+          <h2>Replace misunderstanding with truth</h2>
+        </div>
+
+        <div class="grid two-col">
+          <article class="myth-card">
+            <h3>Myth</h3>
+            <p>Postpartum depression only happens in the first few days after birth.</p>
+          </article>
+          <article class="fact-card">
+            <h3>Fact</h3>
+            <p>Symptoms can begin any time in the first year, and they may appear gradually.</p>
+          </article>
+          <article class="myth-card">
+            <h3>Myth</h3>
+            <p>Talking about postpartum depression will make it worse.</p>
+          </article>
+          <article class="fact-card">
+            <h3>Fact</h3>
+            <p>Talking to trusted people and professionals often reduces shame and speeds support.</p>
+          </article>
+          <article class="myth-card">
+            <h3>Myth</h3>
+            <p>Treatment always means taking strong medicine.</p>
+          </article>
+          <article class="fact-card">
+            <h3>Fact</h3>
+            <p>Treatment can include counseling, support groups, lifestyle support, and medical care when needed.</p>
+          </article>
+          <article class="myth-card">
+            <h3>Myth</h3>
+            <p>If a mother can still do daily tasks, she cannot have postpartum depression.</p>
+          </article>
+          <article class="fact-card">
+            <h3>Fact</h3>
+            <p>Many people mask symptoms in public while struggling internally and still need help.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="tips">
+        <div class="section-head">
+          <p class="eyebrow">Tips Videos</p>
+          <h2>Helpful video tips and guidance</h2>
+        </div>
+
+        <div class="tips-grid">
+          <article class="tip-card">
+            <h3>Tip Video 1</h3>
+            <p>Watch practical advice and support guidance for postpartum mental health.</p>
+            <button
+              type="button"
+              class="tip-link"
+              data-video-id="Ybyo5nRmr1Y"
+              data-video-title="Postpartum Tips Video 1"
+            >
+              Watch video
+            </button>
+          </article>
+
+          <article class="tip-card">
+            <h3>Tip Video 2</h3>
+            <p>Learn more ways families and friends can support recovering mothers.</p>
+            <button
+              type="button"
+              class="tip-link"
+              data-video-id="AflafieNzOA"
+              data-video-title="Postpartum Tips Video 2"
+            >
+              Watch video
+            </button>
+          </article>
+
+          <article class="tip-card">
+            <h3>Tip Video 3</h3>
+            <p>Understand signs to watch for and when to seek professional help early.</p>
+            <button
+              type="button"
+              class="tip-link"
+              data-video-id="xwoi_Jsx2zc"
+              data-video-title="Postpartum Tips Video 3"
+            >
+              Watch video
+            </button>
+          </article>
+
+          <article class="tip-card">
+            <h3>Tip Video 4</h3>
+            <p>Discover coping tools, rest strategies, and ways to lower daily stress.</p>
+            <button
+              type="button"
+              class="tip-link"
+              data-video-id="EeRzmP84H_I"
+              data-video-title="Postpartum Tips Video 4"
+            >
+              Watch video
+            </button>
+          </article>
+
+          <article class="tip-card">
+            <h3>Tip Video 5</h3>
+            <p>Get encouragement and reminders that recovery is possible with support.</p>
+            <button
+              type="button"
+              class="tip-link"
+              data-video-id="4OXL7NJdp5M"
+              data-video-title="Postpartum Tips Video 5"
+            >
+              Watch video
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="help">
+        <div class="section-head">
+          <p class="eyebrow">Help and Contact</p>
+          <h2>You are not alone</h2>
+        </div>
+
+        <div class="grid split-gap">
+          <article class="surface-card">
+            <h3>Take the first step today</h3>
+            <ul>
+              <li>Talk to someone you trust</li>
+              <li>Consult a doctor or mental health professional</li>
+              <li>Create a weekly support routine with family</li>
+            </ul>
+            <p class="note">
+              You can add your local hotline and Philippine mental health resources here.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Postpartum Depression Awareness | Support starts with understanding.</p>
+    </footer>
+
+    <div class="video-modal" id="videoModal" aria-hidden="true">
+      <div class="video-modal-backdrop" data-modal-close></div>
+      <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+        <div class="video-modal-top">
+          <h3 id="videoModalTitle">Tips Video</h3>
+          <button type="button" class="video-modal-close" id="closeVideoModal" aria-label="Close video">
+            x
+          </button>
+        </div>
+        <div class="video-frame-wrap">
+          <iframe
+            id="videoFrame"
+            src=""
+            title="Postpartum tips video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
